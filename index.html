@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Youth for Change Joska is a youth-led community initiative connecting young people with opportunities, learning, environmental action and community development in Joska, Kenya.">
+<title>Youth for Change Joska | Young People. Community Action. A Better Joska.</title>
+<style>
+:root{--ink:#10231b;--green:#174d35;--leaf:#2f7d4d;--cream:#f7f4ea;--gold:#d6a84f;--white:#fff;--muted:#637067;--line:#dfe6df;--shadow:0 16px 45px rgba(16,35,27,.10)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--cream);line-height:1.65}a{text-decoration:none;color:inherit}.container{width:min(1120px,92%);margin:auto}.nav{position:sticky;top:0;z-index:20;background:rgba(247,244,234,.94);backdrop-filter:blur(12px);border-bottom:1px solid rgba(16,35,27,.08)}.navin{display:flex;align-items:center;justify-content:space-between;min-height:74px}.brand{font-weight:900;letter-spacing:-.03em;line-height:1.05}.brand small{display:block;font-size:.66rem;letter-spacing:.14em;color:var(--leaf);margin-top:5px}.links{display:flex;gap:24px;font-size:.92rem;font-weight:700}.links a:hover{color:var(--leaf)}.menu{display:none;background:none;border:0;font-size:1.5rem}
+.hero{padding:88px 0 70px;background:radial-gradient(circle at 85% 15%,#e2edd9 0,transparent 30%),linear-gradient(135deg,#f7f4ea 0%,#edf4e9 100%)}.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:55px;align-items:center}.eyebrow{display:inline-flex;padding:7px 12px;border:1px solid #c9d9c8;border-radius:999px;color:var(--green);font-weight:800;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase}.hero h1{font-size:clamp(3rem,7vw,5.8rem);line-height:.94;letter-spacing:-.065em;margin:20px 0}.hero h1 span{color:var(--leaf)}.hero p{font-size:1.14rem;color:#4e5d54;max-width:650px}.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-block;padding:13px 19px;border-radius:10px;font-weight:850;border:1px solid var(--green)}.btn.primary{background:var(--green);color:white}.btn.secondary{background:transparent}.hero-card{background:var(--green);color:white;border-radius:28px;padding:34px;box-shadow:var(--shadow);position:relative;overflow:hidden}.hero-card:after{content:"";position:absolute;width:220px;height:220px;border:35px solid rgba(255,255,255,.07);border-radius:50%;right:-90px;bottom:-90px}.hero-card h3{font-size:1.7rem;margin-top:0}.statgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:28px}.stat{padding:17px;border:1px solid rgba(255,255,255,.16);border-radius:15px;background:rgba(255,255,255,.06)}.stat b{display:block;font-size:1.7rem}.stat span{font-size:.85rem;color:#dce9df}
+section{padding:82px 0}.section-head{max-width:720px;margin-bottom:36px}.kicker{color:var(--leaf);font-weight:900;text-transform:uppercase;font-size:.78rem;letter-spacing:.12em}.section-head h2{font-size:clamp(2rem,4vw,3.4rem);line-height:1.05;letter-spacing:-.045em;margin:10px 0 15px}.section-head p{color:var(--muted)}.about{background:white}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:17px}.card{background:var(--cream);border:1px solid var(--line);border-radius:18px;padding:24px}.card .icon{font-size:1.7rem}.card h3{margin:10px 0 7px}.card p{margin:0;color:var(--muted);font-size:.94rem}.work-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.work{background:white;border-radius:20px;padding:30px;border:1px solid var(--line)}.work h3{margin-top:0}.tag{display:inline-block;padding:5px 9px;border-radius:999px;background:#e8f0e5;color:var(--green);font-size:.74rem;font-weight:800;margin:3px 3px 3px 0}.opps{background:var(--green);color:white}.opps .section-head p{color:#d7e4db}.opps-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.opp{border:1px solid rgba(255,255,255,.18);border-radius:18px;padding:24px;background:rgba(255,255,255,.05)}.opp h3{margin-top:0}.opp p{color:#d7e4db}.events{background:white}.event{display:flex;gap:22px;align-items:center;border:1px solid var(--line);padding:22px;border-radius:18px;margin-bottom:14px}.date{min-width:76px;text-align:center;border-radius:13px;background:var(--cream);padding:10px;font-weight:900;color:var(--green)}.date b{display:block;font-size:1.7rem;line-height:1}.partner{background:#e9f1e6}.partner-box{background:white;border-radius:24px;padding:40px;display:grid;grid-template-columns:1.2fr .8fr;gap:30px;box-shadow:var(--shadow)}.contact{background:var(--ink);color:white}.contact p{color:#d1ddd5}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px}.contact-card{border:1px solid rgba(255,255,255,.15);border-radius:18px;padding:25px}.footer{background:#09140f;color:#b9c8bf;padding:28px 0;font-size:.9rem}.footerin{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.notice{font-size:.82rem;color:#7a877f;margin-top:12px}
+@media(max-width:850px){.links{display:none}.menu{display:block}.hero-grid,.partner-box,.contact-grid,.work-grid{grid-template-columns:1fr}.cards{grid-template-columns:1fr 1fr}.opps-grid{grid-template-columns:1fr}.hero{padding-top:60px}.hero-card{margin-top:5px}}
+@media(max-width:520px){.cards{grid-template-columns:1fr}.hero h1{font-size:3.25rem}.event{align-items:flex-start}.date{min-width:62px}}
+</style>
+</head>
+<body>
+<header class="nav"><div class="container navin">
+<a class="brand" href="#home">YOUTH FOR CHANGE JOSKA<small>COMMUNITY • OPPORTUNITY • ACTION</small></a>
+<nav class="links"><a href="#about">About</a><a href="#work">Our Work</a><a href="#opportunities">Opportunities</a><a href="#events">Activities</a><a href="#partner">Partner</a><a href="#contact">Contact</a></nav>
+<button class="menu" aria-label="Open menu" onclick="document.querySelector('.links').style.display=document.querySelector('.links').style.display==='flex'?'none':'flex'">☰</button>
+</div></header>
+
+<main>
+<section class="hero" id="home"><div class="container hero-grid">
+<div><span class="eyebrow">Youth-led • Joska, Kenya</span>
+<h1>Young people.<br><span>Community action.</span><br>A better Joska.</h1>
+<p>Youth for Change Joska brings young people together to learn, connect, take practical action and create opportunities for a stronger, cleaner and more empowered community.</p>
+<div class="buttons"><a class="btn primary" href="#contact">Get Involved</a><a class="btn secondary" href="#partner">Partner With Us</a></div></div>
+<div class="hero-card"><h3>What we believe</h3><p>Change doesn't have to begin with a big budget. It can begin with young people deciding to show up, learn something useful, help their community and bring others along.</p>
+<div class="statgrid"><div class="stat"><b>01</b><span>Connect young people</span></div><div class="stat"><b>02</b><span>Create exposure</span></div><div class="stat"><b>03</b><span>Take local action</span></div><div class="stat"><b>04</b><span>Build partnerships</span></div></div></div>
+</div></section>
+
+<section class="about" id="about"><div class="container">
+<div class="section-head"><span class="kicker">Who we are</span><h2>A local youth movement with a practical mindset.</h2><p>Youth for Change Joska is a grassroots youth group focused on turning ideas into practical community experiences. We create spaces where young people can discover opportunities, learn from organisations and businesses, volunteer, build useful connections and contribute to positive change in Joska.</p></div>
+<div class="cards">
+<div class="card"><div class="icon">🌱</div><h3>Environment</h3><p>Community clean-ups, environmental awareness and practical action for a cleaner Joska.</p></div>
+<div class="card"><div class="icon">💡</div><h3>Opportunities</h3><p>Sharing credible opportunities, training, events, volunteering and pathways for young people.</p></div>
+<div class="card"><div class="icon">🤝</div><h3>Connections</h3><p>Connecting youth with organisations, businesses, professionals and community initiatives.</p></div>
+<div class="card"><div class="icon">📚</div><h3>Learning</h3><p>Site visits, exposure activities and experiences that help young people explore what is possible.</p></div>
+</div></div></section>
+
+<section id="work"><div class="container"><div class="section-head"><span class="kicker">What we do</span><h2>Action first. Talk second.</h2><p>Our activities are designed to give young people something concrete to participate in, learn from or build on.</p></div>
+<div class="work-grid">
+<div class="work"><h3>Community & Environment</h3><p>We organise and participate in clean-up activities and promote responsible environmental practices within the community.</p><span class="tag">Clean-ups</span><span class="tag">Environment</span><span class="tag">Community action</span></div>
+<div class="work"><h3>Youth Exposure</h3><p>We seek opportunities for young people to visit farms, businesses, organisations, conferences and other spaces where they can learn and explore possibilities.</p><span class="tag">Site visits</span><span class="tag">Learning</span><span class="tag">Entrepreneurship</span></div>
+<div class="work"><h3>Opportunity Sharing</h3><p>We connect young people to credible opportunities and useful information that can support their personal, professional and community development.</p><span class="tag">Training</span><span class="tag">Jobs</span><span class="tag">Events</span></div>
+<div class="work"><h3>Partnerships</h3><p>We work with organisations, businesses, community leaders and other changemakers where collaboration can create meaningful value for young people.</p><span class="tag">Collaboration</span><span class="tag">Partnerships</span><span class="tag">Mentorship</span></div>
+</div></div></section>
+
+<section class="opps" id="opportunities"><div class="container"><div class="section-head"><span class="kicker">For young people</span><h2>Don't just hear about opportunities. Get closer to them.</h2><p>We want young people in Joska to have access to information, exposure and connections that can help them make informed choices about their future.</p></div>
+<div class="opps-grid"><div class="opp"><h3>Discover</h3><p>Find credible opportunities, conferences, training, volunteering and community programmes.</p></div><div class="opp"><h3>Explore</h3><p>Take part in site visits and learning experiences that expose you to careers, businesses and new ideas.</p></div><div class="opp"><h3>Connect</h3><p>Meet people and organisations doing useful work and build relationships that can lead somewhere.</p></div></div></div></section>
+
+<section class="events" id="events"><div class="container"><div class="section-head"><span class="kicker">Activities</span><h2>What we're working on.</h2><p>This section can be updated as activities are confirmed. No fake achievements, no imaginary impact numbers. We have enough of that on the internet.</p></div>
+<div class="event"><div class="date"><b>04</b> OCT</div><div><h3>Community Clean-up</h3><p>Supporting youth participation in a community clean-up exercise. Details and meeting arrangements will be shared with participating members.</p></div></div>
+<div class="event"><div class="date">ONGOING</div><div><h3>Youth Site Visits & Learning</h3><p>Exploring opportunities for young people to visit local farms, businesses and organisations to learn and discover possibilities.</p></div></div>
+<div class="event"><div class="date">ONGOING</div><div><h3>Opportunity Connections</h3><p>Sharing relevant youth opportunities and connecting members with organisations, events and learning spaces.</p></div></div>
+</div></section>
+
+<section class="partner" id="partner"><div class="container"><div class="partner-box"><div><span class="kicker">Work with us</span><h2>Partnership can start with one conversation.</h2><p>We welcome collaboration with organisations, businesses, farms, community initiatives, professionals and other groups interested in supporting youth learning, environmental action and community development in Joska.</p></div><div><h3>Ways to collaborate</h3><p>• Host a site visit<br>• Offer a learning session<br>• Support a community activity<br>• Share youth opportunities<br>• Provide mentorship<br>• Co-organise an initiative</p><a class="btn primary" href="#contact">Start a conversation</a></div></div></div></section>
+
+<section class="contact" id="contact"><div class="container"><div class="section-head"><span class="kicker">Get involved</span><h2>Let's build something useful.</h2><p>Youth for Change Joska is built around participation. Whether you want to join, collaborate, share an opportunity or support an activity, we'd like to hear from you.</p></div>
+<div class="contact-grid"><div class="contact-card"><h3>Join the group</h3><p>Use the group's WhatsApp invitation link or contact the group administrator to be added.</p><a class="btn secondary" style="color:white;border-color:#fff" href="https://wa.me/" target="_blank" rel="noopener">WhatsApp</a></div>
+<div class="contact-card"><h3>Partnerships & enquiries</h3><p>For collaboration, site visits, youth opportunities or community activities, reach out through the group's official social channels.</p><p><strong>Location:</strong> Joska, Kenya</p></div></div>
+<p class="notice">Replace the WhatsApp and social links with your official contacts before publishing.</p>
+</div></section>
+</main>
+
+<footer class="footer"><div class="container footerin"><div><strong>YOUTH FOR CHANGE JOSKA</strong><br>Young People. Community Action. A Better Joska.</div><div>© 2026 Youth for Change Joska</div></div></footer>
+</body></html>
